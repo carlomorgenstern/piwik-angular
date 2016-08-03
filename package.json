@@ -1,0 +1,38 @@
+{
+  "name": "piwik-angular",
+  "version": "0.9.0",
+  "description": "Angular Services for web tracking with Piwik",
+  "main": "dist/piwik-angular.js",
+  "scripts": {
+    "build": "uglifyjs dist/piwik-angular.js -cm -o dist/piwik-angular.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlomorgenstern/piwik-angular.git"
+  },
+  "keywords": [
+    "angular",
+    "piwik",
+    "web",
+    "analytics",
+    "tracking"
+  ],
+  "author": "Carlo Morgenstern",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/carlomorgenstern/piwik-angular/issues"
+  },
+  "homepage": "https://github.com/carlomorgenstern/piwik-angular#readme",
+  "devDependencies": {
+    "angular-mocks": "^1.5.8",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.2",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "uglify-js": "^2.7.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}

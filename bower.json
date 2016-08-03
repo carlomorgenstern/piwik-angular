@@ -1,0 +1,23 @@
+{
+  "name": "piwik-angular",
+  "description": "Angular Services for web tracking with Piwik",
+  "main": "dist/piwik-angular.js",
+  "authors": [
+    "Carlo Morgenstern"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "angular",
+    "piwik",
+    "web",
+    "analytics",
+    "tracking"
+  ],
+  "homepage": "https://github.com/carlomorgenstern/piwik-angular",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
