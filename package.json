@@ -1,6 +1,6 @@
 {
   "name": "piwik-angular",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Angular Services for web tracking with Piwik",
   "main": "dist/piwik-angular.js",
   "scripts": {
