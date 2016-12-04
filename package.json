@@ -5,7 +5,7 @@
   "main": "dist/piwik-angular.js",
   "scripts": {
     "build": "uglifyjs dist/piwik-angular.js -cm -o dist/piwik-angular.min.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start --single-run"
   },
   "repository": {
     "type": "git",
