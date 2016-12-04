@@ -72,10 +72,14 @@
             var executed = false;
             return function(piwikUrl, siteId) {
                 if (!executed) {
+                    piwikUrl.replace(/\/+$/, "");
+
                     $window._paq.push(['setTrackerUrl', piwikUrl+'/piwik.php']);
                     $window._paq.push(['setSiteId', siteId]);
-                    var script = angular.element('<script type="text/javascript" defer="" async="" src="' + piwikUrl +'/piwik.js"></script>');
-                    angular.element(document.querySelector('head')).append(script);
+                    var script = document.createElement('script');
+                    script.type = 'text/javascript'; script.async = true; script.defer = true;
+                    script.src = piwikUrl + '/piwik.js';
+                    document.head.appendChild(script);
                 }
             };
         })();
