@@ -18,6 +18,8 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test"
+    "test",
+    "karma.conf.js",
+    "package.json"
   ]
 }
