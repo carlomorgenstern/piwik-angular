@@ -1,6 +1,6 @@
 # piwik-angular
 An Angular Service implementation for the JavaScript async tracker of Piwik.
-> This library was last tested with Piwik Version 2.16.2
+> This library was last tested with Piwik Version 3.0.0-beta4
 
 ## Installation
 Via bower:
@@ -29,8 +29,16 @@ myApp.controller('awesomeController', function(PiwikTracker) {
 
 After the setup, just use the 'PiwikTracker' service to make tracking configurations and calls. It supports the same methods like the ['Piwik JavaScript Tracking Client'](http://developer.piwik.org/api-reference/tracking-javascript).
 ```javascript
-   ...
-   PiwikTracker.trackPageView();
+    PiwikTracker.trackPageView();
+```
+
+Piwik's "get" methods are wrapped in promises for easier coding, so you can use them like this:
+```javascript
+    PiwikTracker.getVisitorId().then(function(id) {
+        console.log(id);
+    }, function(error) {
+        console.log(error);
+    });
 ```
 
 ## Contributions
