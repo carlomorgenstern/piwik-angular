@@ -17,7 +17,7 @@
         // Configuration of Tracking Cookies
         'setCookieNamePrefix', 'setCookieDomain', 'setCookiePath', 'setVisitorCookieTimeout', 'setReferralCookieTimeout', 'setSessionCookieTimeout',
         // Advanced uses
-        'addListener', 'setRequestMethod', 'setCustomRequestProcessing', 'setRequestContentType',
+        'addListener', 'setRequestMethod', 'setCustomRequestProcessing', 'setRequestContentType', 'addTracker',
         // Undocumented
         'setCustomData', 'setCountPreRendered', 'enableJSErrorTracking', 'disablePerformanceTracking'
     ]);
